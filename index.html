@@ -17,60 +17,62 @@ body {
 nav {
     display: flex;
     justify-content: space-between;
-    padding: 20px 50px;
+    padding: 20px 60px;
     background: #020617;
 }
-nav h2 {
-    color: #38bdf8;
-}
+nav h2 { color: #38bdf8; }
 nav a {
     color: white;
-    text-decoration: none;
     margin-left: 20px;
+    text-decoration: none;
 }
 
-/* Hero Section */
+/* Hero */
 .hero {
     text-align: center;
-    padding: 80px 20px;
+    padding: 100px 20px;
 }
 .hero h1 {
-    font-size: 40px;
+    font-size: 42px;
 }
-.hero span {
-    color: #38bdf8;
-}
+.hero span { color: #38bdf8; }
 .hero p {
-    margin-top: 10px;
     font-size: 18px;
+    margin: 15px 0;
 }
-.hero a {
-    display: inline-block;
-    margin-top: 20px;
+.btn {
     padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.btn-primary {
     background: #38bdf8;
     color: black;
-    border-radius: 5px;
 }
-
-/* Sections */
-section {
-    padding: 50px;
-}
-h2 {
+.btn-outline {
+    border: 1px solid #38bdf8;
     color: #38bdf8;
 }
 
-/* Cards */
+/* Section */
+section {
+    padding: 60px;
+}
+h2 { color: #38bdf8; }
+
 .card {
     background: #1e293b;
     padding: 20px;
-    margin-top: 15px;
     border-radius: 10px;
-    transition: 0.3s;
+    margin-top: 15px;
 }
-.card:hover {
-    transform: scale(1.03);
+
+/* Grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
 }
 
 /* Footer */
@@ -88,6 +90,7 @@ footer {
     <h2>Siva Tarun</h2>
     <div>
         <a href="#about">About</a>
+        <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
     </div>
@@ -95,48 +98,60 @@ footer {
 
 <div class="hero">
     <h1>Hi, I'm <span>Siva Tarun</span> 👋</h1>
-    <p>Aspiring Software Developer | Python | DSA</p>
-    <a href="https://github.com/SivaTarun-Tech" target="_blank">View GitHub</a>
+    <p>Software Developer | Python | DSA</p>
+    <p>Building practical applications using Python, Machine Learning, and problem-solving skills.</p>
+
+    <a href="https://github.com/SivaTarun-Tech" class="btn btn-primary" target="_blank">GitHub</a>
+    <a href="mailto:tarun94666@gmail.com" class="btn btn-outline">Contact Me</a>
 </div>
 
 <section id="about">
-    <h2>🚀 About Me</h2>
+    <h2>About Me</h2>
     <div class="card">
         <p>
-            I am a B.Tech graduate passionate about software development.
-            Currently learning Data Structures & Algorithms and building
-            projects using Python and Machine Learning.
+        I am a B.Tech graduate in Electronics and Communication Engineering,
+        passionate about software development and problem solving.
+        Currently focused on Data Structures & Algorithms and building
+        projects using Python and Machine Learning.
         </p>
     </div>
 </section>
 
-<section>
-    <h2>🛠️ Skills</h2>
-    <div class="card">
-        Python, Java, HTML, CSS, JavaScript, SQL, Pandas, NumPy
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="grid">
+        <div class="card">Python</div>
+        <div class="card">Java</div>
+        <div class="card">SQL</div>
+        <div class="card">HTML</div>
+        <div class="card">CSS</div>
+        <div class="card">JavaScript</div>
+        <div class="card">Pandas</div>
+        <div class="card">NumPy</div>
     </div>
 </section>
 
 <section id="projects">
-    <h2>📌 Projects</h2>
+    <h2>Projects</h2>
     <div class="card">
         <h3>Customer Churn Prediction</h3>
-        <p>Machine learning model to predict customer churn using Python.</p>
-        <a href="https://github.com/SivaTarun-Tech/customer-churn-prediction" target="_blank">
-            View Project
-        </a>
+        <p>
+        Developed a machine learning model to predict customer churn using Python.
+        Performed data preprocessing and model evaluation using Pandas and Scikit-learn.
+        </p>
+        <a href="https://github.com/SivaTarun-Tech/customer-churn-prediction" target="_blank">View Project</a>
     </div>
 </section>
 
 <section id="contact">
-    <h2>📫 Contact</h2>
+    <h2>Contact Me</h2>
     <div class="card">
         <p>Email: tarun94666@gmail.com</p>
         <p>
-            LinkedIn:
-            <a href="https://www.linkedin.com/in/nimmaluri-siva-tarun-4780b1290/" target="_blank">
-                View Profile
-            </a>
+        LinkedIn:
+        <a href="https://www.linkedin.com/in/nimmaluri-siva-tarun-4780b1290/" target="_blank">
+        View Profile
+        </a>
         </p>
     </div>
 </section>
