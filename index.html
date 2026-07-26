@@ -38,13 +38,26 @@ nav a {
 .hero span { color: #38bdf8; }
 .hero p {
     font-size: 18px;
-    margin: 15px 0;
+    margin: 10px 0;
 }
+
+/* Profile Image */
+.profile-pic {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #38bdf8;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
 .btn {
     padding: 10px 20px;
     margin: 10px;
     border-radius: 5px;
     text-decoration: none;
+    display: inline-block;
 }
 .btn-primary {
     background: #38bdf8;
@@ -55,12 +68,13 @@ nav a {
     color: #38bdf8;
 }
 
-/* Section */
+/* Sections */
 section {
     padding: 60px;
 }
 h2 { color: #38bdf8; }
 
+/* Cards */
 .card {
     background: #1e293b;
     padding: 20px;
@@ -97,6 +111,9 @@ footer {
 </nav>
 
 <div class="hero">
+    <!-- Replace profile.jpg with your uploaded image name -->
+    <img src="profile.jpg" alt="Siva Tarun" class="profile-pic">
+
     <h1>Hi, I'm <span>Siva Tarun</span> 👋</h1>
     <p>Software Developer | Python | DSA</p>
     <p>Building practical applications using Python, Machine Learning, and problem-solving skills.</p>
@@ -139,7 +156,9 @@ footer {
         Developed a machine learning model to predict customer churn using Python.
         Performed data preprocessing and model evaluation using Pandas and Scikit-learn.
         </p>
-        <a href="https://github.com/SivaTarun-Tech/customer-churn-prediction" target="_blank">View Project</a>
+        <a href="https://github.com/SivaTarun-Tech/customer-churn-prediction" target="_blank">
+            View Project
+        </a>
     </div>
 </section>
 
